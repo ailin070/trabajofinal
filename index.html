@@ -4,76 +4,85 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Tienda CDM - Inicio</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
     <header class="site-header">
         <div class="brand">
-            <img src="logo.jpg" alt="Logo" class="logo">
+            <img src="nuevologo.jpg" alt="Logo Tienda CDM" class="logo">
             <div class="brand-text">
                 <div class="name">Tienda CDM</div>
                 <div class="subtitle">tienda online</div>
             </div>
         </div>
-        <nav class="main-nav">
+
+        <nav class="main-nav" aria-label="Navegación principal">
             <a href="#inicio">Inicio</a>
-            <a href="#sobre">Sobre nosotros</a>
-            <a href="#ayuda">Ayuda</a>
-            <a href="#mis-compras">Mis compras</a>
-            <a href="#favoritos">Favoritos</a>
+            <a href="sobre_nosotros.html">Sobre nosotros</a>
+            <a href="ayuda.html">Ayuda</a>
+            <a href="cart.html">Mis compras</a>
+            <a href="electrodomesticos.html">Electrodomésticos</a>
+            <a href="deportes.html">Deporte</a>
+            <a href="joyeria.html">Joyería</a>
+            <a href="vehiculo.html">Automóviles</a>
+            <a href="compra_internacional.html">Compra internacional</a>
+            <a href="ropa.html">Ropa</a>
+            <a href="registro.html">inicio de sesion</a>
         </nav>
     </header>
 
     <div class="hr-line" role="separator" aria-hidden="true"></div>
 
-    <main class="container">
-        <section class="hero">
-            <h1>Bienvenido a Tienda CDM</h1>
+    <main class="container" id="inicio">
+        <section class="hero" aria-labelledby="hero-title">
+            <img src="bienvenidos cdm.jpeg" width="850" height="200" alt="Banner principal de Tienda CDM">
+            <h2 id="hero-title" class="visually-hidden">Bienvenidos a Tienda CDM</h2>
             <p>Elegí una sección para ver productos.</p>
         </section>
 
-        <section class="sections-grid" id="sections">
+        <section class="sections-grid" id="sections" aria-label="Secciones de la tienda">
             <a href="electrodomesticos.html" class="card" data-cat="electrodomesticos"> 
-                <img src="electrodomesticos.jpg" alt="electrodomesticos">
-                <h3>electrodomesticos</h3>
+                <img src="electrodomesticos.jpg" alt="Electrodomésticos">
+                <h3>Electrodomésticos</h3>
                 <p>Celulares, tablets y más</p>
             </a>
             
-            <a href="deportes.html" class="card" data-cat="deporte">
-                <img src="deporte.jpeg" alt="deportes y fitness">
-                <h3>deporte</h3>
-                <p>accesorios o indumentaria</p>
+            <a href="deportes.html" class="card" data-cat="deportes">
+                <img src="deporte.jpeg" alt="Deportes y fitness">
+                <h3>Deporte</h3>
+                <p>Accesorios o indumentaria</p>
             </a>
 
             <a href="joyeria.html" class="card" data-cat="joyeria">
-                <img src="joyeria.jpeg" alt="joyeria">
-                <h3>joyeria</h3>
-                <p>anillos,cadenitas, pulseras, etc</p>
+                <img src="joyeria.jpeg" alt="Joyería">
+                <h3>Joyería</h3>
+                <p>Anillos, cadenas, pulseras, etc.</p>
             </a>
 
             <a href="vehiculo.html" class="card" data-cat="automoviles">
-                <img src="vehiculo.jpg" alt="vehiculos">
-                <h3>automoviles</h3>
-                <p>autos, camionetas,camiones, etc</p>
+                <img src="vehiculo.jpg" alt="Vehículos">
+                <h3>Automóviles</h3>
+                <p>Autos, camionetas, camiones, etc.</p>
             </a>
 
-             <a href="compra_internacional.html" class="card" data-cat="compra-internacional">
-                <img src="compra internacional.jpeg" alt="compra internacional">
-                <h3>compra internacional</h3>
-                <p>autos, tecnologia, perfumes, etc</p>
+            <a href="compra_internacional.html" class="card" data-cat="compra-internacional">
+                <img src="compra internacional.jpeg" alt="Compra internacional">
+                <h3>Compra internacional</h3>
+                <p>Tecnología, perfumes y más</p>
             </a>
-                <a href="ropa.html" class="card" data-cat="ropa">
-                    <img src="ropa.jpg" alt="ropa">
-                    <h3>ropa</h3>
-                    <p>remeras, camperas, pantalones, etc</p>
-                </a>
+
+            <a href="ropa.html" class="card" data-cat="ropa">
+                <img src="ropa.jpg" alt="Ropa">
+                <h3>Ropa</h3>
+                <p>Remeras, camperas, pantalones, etc.</p>
+            </a>
         </section>
     </main>
 
     <footer class="site-footer">
-        <p> 2025 Tienda CDM</p>
+        <p>© 2025 Tienda CDM</p>
     </footer>
 
-    <script src="carrito.js"></script>
+    <script src="carrito.js" defer></script>
 </body>
 </html>

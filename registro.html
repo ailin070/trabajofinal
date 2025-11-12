@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registro / Iniciar sesión - Tienda CDM</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+     <img src="nuevologo.jpg" alt="Logo" class="logo">
+    <a href="index.html">Volver al inicio</a>
+    <h1>Tienda CDM</h1>
+  </header>
+
+  <main>
+    <section aria-labelledby="login-title">
+      <form action="login.php" method="post" autocomplete="on">
+        <fieldset>
+          <legend id="login-title">Iniciar sesión</legend>
+
+          <label for="login-email">Correo electrónico</label>
+          <input type="email" id="login-email" name="email" required autocomplete="email">
+
+          <label for="login-password">Contraseña</label>
+          <input type="password" id="login-password" name="password" required autocomplete="current-password">
+
+          <label for="remember">
+            <input type="checkbox" id="remember" name="remember" value="1"> Recuérdame
+          </label>
+
+          <input type="hidden" name="redirect" value="index.html">
+
+          <p>
+            <button type="submit">Ingresar</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="register-title">
+      <form action="register.php" method="post" autocomplete="on">
+        <fieldset>
+          <legend id="register-title">Registrarse</legend>
+
+          <label for="reg-name">Nombre completo</label>
+          <input type="text" id="reg-name" name="name" required autocomplete="name">
+
+          <label for="reg-email">Correo electrónico</label>
+          <input type="email" id="reg-email" name="email" required autocomplete="email">
+
+          <label for="reg-password">Contraseña</label>
+          <input type="password" id="reg-password" name="password" required minlength="8" autocomplete="new-password">
+          <small>La contraseña debe tener al menos 8 caracteres.</small>
+
+          <label for="reg-password-confirm">Confirmar contraseña</label>
+          <input type="password" id="reg-password-confirm" name="password_confirm" required minlength="8" autocomplete="new-password">
+
+          <input type="hidden" name="redirect" value="checkout.html">
+
+          <p>
+            <button type="submit">Crear cuenta</button>
+            <button type="reset">Limpiar</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Si ya tenés una cuenta usá el formulario "Iniciar sesión".</p>
+  </footer>
+</body>
+</html>
