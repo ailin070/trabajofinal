@@ -20,6 +20,29 @@
 <p id="checkoutMessage" style="margin-top:10px;"></p>
   </main>
 
+  <div class="shipping-details">
+    <h3>Detalles de Envío</h3>
+    <form id="shippingForm">
+        
+        <label for="country">País/Región</label>
+        <select id="country" name="country" required>
+            <option value="">Seleccione un país</option>
+            <option value="ARG">Argentina</option>
+            <option value="CHL">Chile</option>
+            <option value="COL">Colombia</option>
+            <option value="URY">Uruguay</option>
+            <option value="ESP">España</option>
+        </select>
+
+        <label for="city">Ciudad / Localidad</label>
+        <input type="text" id="city" name="city" required placeholder="Buenos Aires / Santiago">
+        
+        <label for="address">Dirección de Envío</label> 
+        <input type="text" id="address" name="address" placeholder="Calle, número, piso/departamento" required>
+        
+    </form>
+</div>
+
   <script src="carrito.js"></script>
 </body>
 </html>

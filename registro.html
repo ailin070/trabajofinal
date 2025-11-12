@@ -9,15 +9,25 @@
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
-  <header>
-     <img src="nuevologo.jpg" alt="Logo" class="logo">
-    <a href="index.html">Volver al inicio</a>
-    <h1>Tienda CDM</h1>
+  <header class="site-header">
+        <div class="brand">
+            <img src="nuevologo.jpg" alt="Logo" class="logo">
+            <div class="brand-text">
+                <div class="name">Tienda CDM</div>
+                <div class="subtitle">tienda online</div>
+            </div>
+        </div>
+        <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+     
+    </nav>
   </header>
+  
 
   <main>
     <section aria-labelledby="login-title">
-      <form action="login.php" method="post" autocomplete="on">
+      <form action="index.html" method="get">
+
         <fieldset>
           <legend id="login-title">Iniciar sesión</legend>
 
@@ -43,7 +53,8 @@
     <hr>
 
     <section aria-labelledby="register-title">
-      <form action="register.php" method="post" autocomplete="on">
+     <form action="index.html" method="get">
+
         <fieldset>
           <legend id="register-title">Registrarse</legend>
 
